@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доломітове борошно</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Доломітове борошно</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Якість, на яку можна покластися</h2>
+            <p>Покращуйте свої врожаї за допомогою нашого продукту!</p>
+            <a href="#products" class="btn">Дізнатися більше</a>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container">
+                <h2>Наші товари</h2>
+                <ul class="product-list">
+                    <li class="product-item">
+                        <img src="images/dolomite.jpg" alt="Доломітове борошно" class="product-img">
+                        <div class="product-info">
+                            <h3>Доломітове борошно</h3>
+                            <p>Покращуйте якість ґрунту за допомогою нашого екологічного продукту.</p>
+                            <a href="#" class="btn">Купити</a>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="images/bigbag.jpg" alt="Бигбег" class="product-img">
+                        <div class="product-info">
+                            <h3>Бигбег</h3>
+                            <p>Деталі про продукт будуть додані пізніше.</p>
+                            <a href="#" class="btn">Купити</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h2>Контактна інформація</h2>
+                <ul>
+                    <li><strong>Телефон:</strong> 095 117 90 67</li>
+                    <li><strong>Email:</strong> aslanbelialov@gmail.com</li>
+                    <li><strong>Адреса:</strong> м. Київ, вул. Волноваська, 4</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Доломітове борошно. Всі права захищені.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://telegram.org" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Стрелочка вверх -->
+    <a href="#" class="scroll-up-btn">
+        ↑
+    </a>
+
+    <script>
+        const scrollUpBtn = document.querySelector('.scroll-up-btn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollUpBtn.style.display = 'block';
+            } else {
+                scrollUpBtn.style.display = 'none';
+            }
+        });
+
+        scrollUpBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
